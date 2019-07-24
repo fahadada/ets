@@ -1,0 +1,1 @@
+SELECT * FROM files WHERE RID=any(select RID from mr where RID=any(SELECT RID from rquests where EID =any(select EID FROM emp)))
